@@ -1,0 +1,19 @@
+create keyspace wireshark with replication ={'class' :'SimpleStrategy','replication_factor' : 1};
+
+CREATE TABLE wireshark.source_new (number bigint PRIMARY KEY, time double, source text, destination text, protocol text, info text, length bigint);
+SELECT * FROM wireshark.source_new;
+SELECT * FROM wireshark.source_new WHERE protocol=‘TCP’ AND destination = ‘’192.168.0.2;
+
+
+CREATE TABLE wireshark.source_frequency (source text PRIMARY KEY, counts bigint);
+SELECT * FROM wireshark.source_frequency WHERE source= '74.125.225.';
+
+CREATE TABLE wireshark.source_protocol_info (source text, protocol text, info text, counts bigint, avg_len double,  PRIMARY KEY (source, protocol, info));
+SELECT * FROM wireshark.source_protocol_info WHERE source= '74.125.225' AND protocol=’TLSv1.2’ AND info=’Server Hello’;
+
+CREATE TABLE wireshark.source_inner(source text, protocol text, info text, counts bigint, avg_len double,  PRIMARY KEY (source, protocol, info));
+SELECT * FROM wireshark.source_protocol_info WHERE source= ’192.168.0.0’;
+
+
+
+

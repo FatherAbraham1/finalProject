@@ -1,0 +1,6 @@
+"1","0.000000000","192.168.0.102","108.160.166.141","TCP","53194 > https [FIN, ACK] Seq=1 Ack=1 Win=8192 Len=0 TSval=915819938 TSecr=2480798239","66"
+"2","2.635793000","192.168.0.102","108.160.166.141","TCP","[TCP Retransmission] 53194 > https [FIN, ACK] Seq=1 Ack=1 Win=8192 Len=0 TSval=915822570 TSecr=2480798239","66"
+"3","5.247154000","192.168.0.102","223.6.251.201","TCP","53160 > http [RST, ACK] Seq=1 Ack=1 Win=65535 Len=0","54"
+"4","5.558019000","192.168.0.102","255.255.255.255","DB-LSP-DISC","Dropbox LAN sync Discovery Protocol","168"
+"5","5.557934000","192.168.0.102","255.255.255.255","DB-LSP-DISC","Dropbox LAN sync Discovery Protocol","158"
+"6","5.558279000","192.168.0.102","192.168.0.255","DB-LSP-DISC","Dropbox LAN sync Discovery Protocol","168"
