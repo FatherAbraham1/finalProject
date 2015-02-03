@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Packets_Protocol_Info Group</title>
+    <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("AirLines-white.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:2cm"/>
+    <form action="/cgi-bin/packets_report.pl" style="width:600px;margin:0 auto;padding-top=600px;background:#FFFFFF" method="get" target="results_iframe" class="elegant-aero">
+      <label>
+	<span>Source:</span>
+	<input type="text" name="source" value="74.125.225"/>
+      </label>
+      <label>
+	<span>Protocol:</span>
+	<input type="text" name="protocol" value="TLSv1.2"/>
+      </label>
+      <label>
+	<span>Info:</span>
+	<input type="text" name="info" value="Certificate"/>
+      </label>
+      <label>
+	<span></span> <input  type="submit" value="Submit">
+      </label>
+    </form>
+    <p style="margin-bottom:2cm"/>
+
+    <iframe frameBorder="0" name="results_iframe" style="display:block;width:70%;margin-left:auto;margin-right:auto"/>
+  </body>
+</html>
